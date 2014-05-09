@@ -7,12 +7,13 @@ Grails Jetty Plugin now supports multiple Jetty Container and Servlet API versio
     Grails Version    Servlet API Version     Jetty Container Version   Jetty Plugin Version
     2.2.x             2.5.x                   7.x                       2.0.x
     2.3.x             3.0.x                   9.0.x                     3.0.x
+    ?.?.?             3.1.x                   9.1.x                     3.1.x
 
 ## Usage
 
 In your `BuildConfig.groovy` add the following lines under the plugins section:
 
-    build ":jetty:3.0.0"
+    build ":jetty:3.1.0"
 
 ## Configuration
 
