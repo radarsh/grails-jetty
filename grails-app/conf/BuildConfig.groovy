@@ -5,30 +5,30 @@ grails.project.target.level = 1.7
 
 grails.project.dependency.resolution = {
 
-	inherits 'global'
-	log 'warn'
+    inherits 'global'
+    log 'warn'
 
-	repositories {
-		grailsCentral()
-		mavenLocal()
-		mavenCentral()
-	}
+    repositories {
+        grailsCentral()
+        mavenLocal()
+        mavenCentral()
+    }
 
-	dependencies {
+    dependencies {
 
-		String jettyVersion = '9.0.7.v20131107'
+        String jettyVersion = '9.1.4.v20140401'
 
-        runtime ("org.eclipse.jetty.aggregate:jetty-all:$jettyVersion") {
+        runtime("org.eclipse.jetty.aggregate:jetty-all:$jettyVersion") {
             transitive = false
         }
 
-		// needed for JSP compilation
-		runtime 'org.eclipse.jdt.core.compiler:ecj:4.3.1'
-	}
+        // needed for JSP compilation
+        runtime 'org.eclipse.jdt.core.compiler:ecj:4.3.1'
+    }
 
-	plugins {
-		build(':release:3.0.1', ':rest-client-builder:1.0.3') {
-			export = false
-		}
-	}
+    plugins {
+        build(':release:3.0.1', ':rest-client-builder:1.0.3') {
+            export = false
+        }
+    }
 }

@@ -13,7 +13,7 @@
  * limitations under the License.
  */
 class JettyGrailsPlugin {
-	def version = "3.0.0"
+	def version = "3.1.0"
 	def grailsVersion = "2.3.7 > *"
 	def scopes = [excludes: 'war']
 	def title = "Jetty Plugin"
@@ -28,5 +28,5 @@ class JettyGrailsPlugin {
 		[name: 'Adarsh Ramamurthy', email: 'adarsh.ramamurthy@gmail.com'],
 	]
 	def issueManagement = [system: 'JIRA', url: 'http://jira.grails.org/browse/GPJETTY']
-	def scm = [url: 'https://github.com/radarsh/grails-jetty']
+	def scm = [url: 'https://github.com/grails-plugins/grails-jetty']
 }
